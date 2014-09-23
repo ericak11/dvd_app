@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
-# db/migrations/001_start.rb
 
->>>>>>> d82351cbbb382d758659fe3309f600dccc4babfe
 Sequel.migration do
   change do
     create_table(:stations) do
