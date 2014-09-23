@@ -2,12 +2,12 @@
 
 <form method="POST" action="/session">
   <label for="name">Enter User Name</label>
-  <input type="text" name="user_name" id="name" /><br/>
+  <input type="email" name="user_name" id="name" /><br/>
   <label for="password">Enter Password</label>
   <input type="password" name="password" id="password" disabled/><br/>
   <input type="submit" value="Login" />
 </form>
-
+<a href="/viewer/new">Sign Up</a>
 <% if flash[:error] %>
   <p style="color:red;"><%= flash[:error] %></p>
 <% end %>

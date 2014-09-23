@@ -7,7 +7,7 @@ class ApplicationController < Sinatra::Base
   set :app_file,  File.expand_path(File.dirname(__FILE__), '../')
 
   helpers ApplicationHelper
-  
+
   enable :method_override
   enable :sessions
   set :session_secret, 'super secret'
@@ -17,6 +17,6 @@ class ApplicationController < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  # add a flash has to our website! https://github.com/treeder/rack-flash
+  # add a Flashsh has to our website! https://github.com/treeder/rack-flash
   use Rack::Flash
 end
