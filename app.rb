@@ -50,7 +50,19 @@ class App < ApplicationController
     Viewer.create({name: params[:user_name]})
     redirect to("/")
   end
+# post "/signup" do
+#   password_salt = BCrypt::Engine.generate_salt
+#   password_hash = BCrypt::Engine.hash_secret(params[:password], password_salt)
 
+#   #ideally this would be saved into a database, hash used just for sample
+#   userTable[params[:username]] = {
+#     :salt => password_salt,
+#     :passwordhash => password_hash
+#   }
+
+#   session[:username] = params[:username]
+#   redirect "/"
+# end
 
 
 end
